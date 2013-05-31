@@ -1,7 +1,8 @@
 Ignite
 ======
 
-Hostest at [ignite.phyous.com](http://ignite.phyous.com)
+Hostesd at [ignite.phyous.com](http://ignite.phyous.com)
+
 Visualize current global twitter activity using Play & heatmap.js. Adapted from an example by [pa7](https://github.com/pa7/heatmap.js/blob/master/demo/maps_heatmap_layer/gmaps.html).
 
 <center><img src="/images/example.png" height="500px"/></center>
