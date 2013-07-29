@@ -1,0 +1,9 @@
+language: scala
+env:
+  - PLAY_VERSION=2.1.1
+before_install:
+  - wget http://downloads.typesafe.com/play/2.1.1/play-${PLAY_VERSION}.zip
+  - unzip -q play-${PLAY_VERSION}.zip 
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+script: play-${PLAY_VERSION}/play test
