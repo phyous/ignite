@@ -1,28 +1,25 @@
 package test
 
 import org.specs2.mutable._
-
 import play.api.test._
 import play.api.test.Helpers._
 
-/**
- * add your integration spec here.
- * An integration test will fire up a whole play application in a real (or headless) browser
- */
-class IntegrationSpec extends Specification {
-  
+
+class SeleniumTest extends Specification {
+
+  val app = FakeApplication()
   "Application" should {
-    
-    "work from within a browser" in {
-      running(TestServer(3333), HTMLUNIT) { browser =>
 
-        browser.goTo("http://localhost:3333/")
 
-        browser.pageSource must contain("Your new application is ready.")
+    "works from within a browser" in new WithBrowser(webDriver = Helpers.FIREFOX, app = app) {
+
+      running(FakeApplication()) {
+        browser.goTo("/")
+        browser.$("#tog").getText() must equalTo("Toggle Heatmap")
        
+
+
       }
     }
-    
   }
-  
 }

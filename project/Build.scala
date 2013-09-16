@@ -16,7 +16,8 @@ object ApplicationBuild extends Build {
     "com.twitter" % "util-eval_2.10" % "6.3.0",
     "com.twitter" % "util-collection_2.10" % "6.3.0",
     "com.twitter" % "util-core_2.10" % "6.3.0",
-    "com.twitter" % "util-logging_2.10" % "6.3.0"
+    "com.twitter" % "util-logging_2.10" % "6.3.0",
+    "org.seleniumhq.selenium" % "selenium-java" % "2.33.0"
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(

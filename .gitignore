@@ -1,6 +1,5 @@
 # Extracted from https://github.com/ulrich/macaron-factory/blob/master/.gitignore
 # Ignore all dotfiles...
-.*
 # except for .gitignore
 !.gitignore
 
@@ -19,3 +18,9 @@ test-result
 server.pid
 *.iml
 *.eml
+/.cache
+/.classpath
+/.project
+/.settings/
+/.target/
+/bin
